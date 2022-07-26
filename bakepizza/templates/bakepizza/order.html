@@ -19,7 +19,7 @@
 
     <div style="text-align: center">
         {% if created_pizza_pk %}
-        <button><a href="{% url 'edit_order' created_pizza_pk %}">Specilise Your Order</a></button><br>
+        <button><a href="{% url 'edit_order' created_pizza_pk %}">Specilise Your Order!</a></button><br>
         {% endif %}
     </div>
 
@@ -32,7 +32,7 @@
 
         <br><br>
 
-        Want more than one pizza?
+        Wants order more than one pizza?
 
         <form action="{% url 'pizzas' %}", method="GET">
             {{ multiple_form.as_p }}
